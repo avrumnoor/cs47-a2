@@ -1,6 +1,6 @@
 import { View, Text, Image, StyleSheet, Dimensions, PixelRatio} from "react-native";
 import Icons from "../../assets/Icons";
-import themes from "../../assets/Themes/themes";
+import Themes from "../../assets/Themes/themes";
 
 const { height, width } = Dimensions.get('window');
 
@@ -18,8 +18,8 @@ const Audio = () =>{
 
 const styles = StyleSheet.create({
     audio: {
-        backgroundColor: themes.dark.bgSecondary,
-        borderRadius: 10,
+        backgroundColor: Themes.dark.bgSecondary,
+        borderRadius: 20,
         flex: 1,
         width: width * 0.8,
         flexDirection: "column",
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start",
         alignItems: "flex-start",
         marginBottom: height * 0.05,
+        shadowProp: Themes.dark.shadows,
     },
     audioWave: {
         height: height * 0.05, 

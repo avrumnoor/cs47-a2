@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
         width: width * 0.8,
         aspectRatio: 1/1.1,
         justifyContent: "space-between",
+        shadowProp: Themes.dark.shadows,
     },
     profileImage: {
         // width: "100%",
